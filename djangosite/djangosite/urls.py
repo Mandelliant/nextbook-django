@@ -18,8 +18,8 @@ from django.urls import include, path
 from nextbook.views import suggestion
 
 urlpatterns = [
-    path('nextbook/', include('nextbook.urls')),
     path('menu/', include('menu.urls')),
+    path('nextbook/', include('nextbook.urls')),
     path('newbook/', include('newbook.urls')),
     path('admin/', admin.site.urls),
 ]

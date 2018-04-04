@@ -3,5 +3,5 @@ from . import views
 from newbook.views import library
 
 urlpatterns = [
-    path(r'^newbook/$', views.library, name='library'),
+    path(r'newbook/', views.library, name='library'),
 ]

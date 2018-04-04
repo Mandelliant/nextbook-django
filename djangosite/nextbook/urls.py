@@ -3,5 +3,5 @@ from nextbook import views
 from nextbook.views import suggestion
 
 urlpatterns = [
-    path(r'^nextbook/$', views.suggestion, name='suggestion'),
+    path(r'nextbook/', views.suggestion, name='suggestion'),
 ]
