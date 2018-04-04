@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from nextbook.views import suggestion
 
 urlpatterns = [
     path('nextbook/', include('nextbook.urls')),

@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from nextbook import views
+from nextbook.views import suggestion
 
 urlpatterns = [
-    path('','nextbook/', views.index, name='index'),
+    path(r'^nextbook/$', views.suggestion, name='suggestion'),
 ]
