@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'nextbook.apps.NextbookConfig',
+    'menu.apps.MenuConfig',
+    'newbook.apps.NewbookConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
