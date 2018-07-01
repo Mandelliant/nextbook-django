@@ -1,15 +1,22 @@
+<html>
+  <head>
+    <title>Nextbook</title>
+  </head>
+  <body>
+    <h3>What would you like to do?</h3>
+    <p>Select 'Add a new book' or 'Get a suggestion':</p>
 
-<h3>What would you like to do?</h3>
-<p>Select 'Add a new book' or 'Get a suggestion':</p>
+    <nav>
+      <form method="GET">
+        <select id="nextbook-menu-select">
+          <option value="">Select one...</option>
+          <option value="newbook">Add a new book</option>
+          <option value="nextbook">Get a reading suggestion</option>
+        </select>
+        <br><br>
+        <input type="submit">
+      </form>
+    </nav>
+  </body>
 
-<nav>
-  <form method="GET">
-    <select id="nextbook-menu-select">
-      <option value="">Select one...</option>
-      <option value="newbook">Add a new book</option>
-      <option value="nextbook">Get a reading suggestion</option>
-    </select>
-    <br><br>
-    <input type="submit">
-  </form>
-</nav>
+</html>
