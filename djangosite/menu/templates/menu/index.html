@@ -8,10 +8,10 @@
 
     <nav>
       <form method="GET">
-        <select id="nextbook-menu-select">
+        <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
           <option value="">Select one...</option>
-          <option value="newbook">Add a new book</option>
-          <option value="nextbook">Get a reading suggestion</option>
+          <option value="newbook"><a href="/newbook/">Add a new book</a></option>
+          <option value="nextbook"><a href="/nextbook/">Get a reading suggestion</a></option>
         </select>
         <br><br>
         <input type="submit">
