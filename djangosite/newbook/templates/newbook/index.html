@@ -1,16 +1,10 @@
 <html>
 
-  <div>
-      <h3><a href="/">Back to home</a></h3>
-  </div>
+<div>
+     <h3><a href="/">Back to home</a></h3>
+ </div>
 
-  {% for Book in books %}
-      <div>
-        
-          <p>Title: {{ Book.title }}</p>
-          <p>Author: {{ Book.author }}</p>
-
-      </div>
-  {% endfor %}
-
+   <p>Title: {{ Book.title }}</p>
+   <p>Author: {{ Book.author }}</p>
+   
 </html>
