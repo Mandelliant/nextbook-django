@@ -3,8 +3,9 @@ from django.http import HttpResponse
 from .models import Book
 
 def suggestion(request):
-    return HttpResponse("Get a reading suggestion: Yes or no?")
+    #return HttpResponse("Get a reading suggestion: Yes or no?")
 
+    return render(request, 'nextbook/index.html')
 
 
 
