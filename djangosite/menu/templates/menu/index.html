@@ -1,6 +1,22 @@
-<form action="/search/" method="POST">
-    <label for="menu_selection">What would you like to do? <br>1. Add a new book <br>2. Get a reading suggestion </label>
+<html>
+  <head>
+    <title>Nextbook</title>
+  </head>
+  <body>
+    <h3>What would you like to do?</h3>
+    <p>Select 'Add a new book' or 'Get a suggestion':</p>
 
-    <input id="menu_selection" type="text" name="selection">
-    <input type="submit" value="OK">
-</form>
+    <nav>
+      <form method="GET">
+        <select id="nextbook-menu-select">
+          <option value="">Select one...</option>
+          <option value="newbook">Add a new book</option>
+          <option value="nextbook">Get a reading suggestion</option>
+        </select>
+        <br><br>
+        <input type="submit">
+      </form>
+    </nav>
+  </body>
+
+</html>
