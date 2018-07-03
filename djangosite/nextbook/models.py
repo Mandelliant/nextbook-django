@@ -1,4 +1,5 @@
 from django.db import models
+import random
 
 # Create your models here.
 
@@ -19,3 +20,12 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+
+
+    def get_random():
+        max_id = Book.objects.all().aggregate(max_id=Max("id"))['max_id']
+        while True:
+            pk = random.randint(1, max_id)
+            randbook = Book.objects.filter(pk=pk).first()
+            if randbook:
+                return randbook
