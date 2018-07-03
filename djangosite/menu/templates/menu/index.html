@@ -5,18 +5,12 @@
   <body>
     <h3>What would you like to do?</h3>
     <p>Select 'Add a new book' or 'Get a suggestion':</p>
+    <br>
+    <button type='button' value="newbook"><a href="/newbook/">Add a new book</a></button>
+    <br>
+    <br>
+    <button type='button' value="nextbook"><a href="/nextbook/">Get a reading suggestion</a></button>
 
-    <nav>
-      <form method="GET">
-        <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-          <option value="">Select one...</option>
-          <option value="newbook"><a href="/newbook/">Add a new book</a></option>
-          <option value="nextbook"><a href="/nextbook/">Get a reading suggestion</a></option>
-        </select>
-        <br><br>
-        <input type="submit">
-      </form>
-    </nav>
   </body>
 
 </html>
