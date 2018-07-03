@@ -13,9 +13,9 @@ def suggestion(request):
     #random_index = randrange(0,len(randoms))
 
 
-    books = Book.randoms.all()[0]
+    #books = Book.randoms.all()[0]
 
-    #books = Book.random.choice(randoms)
+    books = Book.get_random()
 
 
     return render(request, 'nextbook/index.html', {'books': books})
