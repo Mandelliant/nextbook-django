@@ -1,12 +1,19 @@
 <html>
   <head>
-    <title>Nextbook</title>
+    <title>Nextbook: Newbook</title>
   </head>
-  <div>
-       <h3><a href="/">Back to home</a></h3>
-  </div>
 
-     <p>Title: {{ Book.title }}</p>
-     <p>Author: {{ Book.author }}</p>
+  <body>
+  {% block content %}
+      <h3>New book</h3>
+      <form method="POST" class="post-form">{% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="save btn btn-default">Add book</button>
+      </form>
+  {% endblock %}
+<br>
+<h3><a href="/">Back to home</a></h3>
+
+</body>
 
 </html>
