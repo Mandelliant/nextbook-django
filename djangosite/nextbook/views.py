@@ -4,8 +4,13 @@ from .models import Book
 
 def suggestion(request):
     #return HttpResponse("Get a reading suggestion: Yes or no?")
+    #books = Book.objects.order_by('?').first()
+    #Book.objects.random
+    #books is the QuerySet variable, basically sets the variable books to be a random Book object from the model
 
-    return render(request, 'nextbook/index.html')
+    books = Book.randoms.all()[0]
+
+    return render(request, 'nextbook/index.html', {'books': books})
 
 
 
