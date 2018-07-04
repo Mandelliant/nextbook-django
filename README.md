@@ -10,14 +10,22 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 <h2>Current version</h2>
 
+**1.0.0**
+
+* Nextbook web app works
+* Book model
+* Main menu with selection buttons
+* Individual pages for each feature
+* Add new book and random recommendation features functioning
+
+
+<h2>Previous versions</h2>
+
 **0.5.0**
 
 * Working web app architecture
 * Book model
 * First version of main menu
-
-
-<h2>Previous versions</h2>
 
 **0.1.0**
 
