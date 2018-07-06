@@ -33,6 +33,12 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 <h2>Roadmap</h2
 
+**Upcoming**
+
+* Clear form after submission of new book
+* Confirmation message: "Added [title] by [author]"
+* Replace HTML forms with Django forms
+
 
 **Projects**
 
