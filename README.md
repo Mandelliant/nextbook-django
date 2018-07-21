@@ -17,6 +17,7 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 * Main menu with selection buttons
 * Individual pages for each feature
 * Add new book and random recommendation features functioning
+* Form clears after submission of new book
 
 
 <h2>Previous versions</h2>
@@ -35,7 +36,6 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 **Upcoming**
 
-* Clear form after submission of new book
 * Confirmation message: "Added [title] by [author]"
 * Replace HTML forms with Django forms
 
