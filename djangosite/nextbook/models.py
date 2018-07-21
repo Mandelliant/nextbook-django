@@ -12,7 +12,11 @@ class RandomManager(models.Manager):
 
 
 class Book(models.Model):
-    book_number = models.IntegerField(default=1, unique=True)
+
+    def lib_total():
+        return Book.objects.count() + 1
+
+    book_number = models.IntegerField(default=lib_total, unique=True)
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
 
@@ -21,7 +25,6 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
-
 
     def get_random():
         max_id = Book.objects.all().aggregate(max_id=Max("id"))['max_id']
