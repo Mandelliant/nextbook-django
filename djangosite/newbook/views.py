@@ -18,20 +18,6 @@ def library(request):
             form = AddBook()
             success = True
     return render(request, 'newbook/index.html', {'form': form})
-'''
-    if request.method == 'POST':
-        form = AddBook(request.POST)
-
-        if form.is_valid():
-            addedbook = form.save(commit=False)
-            addedbook.save()
-            return HttpResponseRedirect('/newbook/')
-
-    else:
-        form = AddBook()
-
-    return render(request, 'newbook/index.html', {'form': form})
-'''
 
 #all new below
 class BookAddConf(SuccessMessageMixin, CreateView):
