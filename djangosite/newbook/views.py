@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from menu.models import Book
 from .forms import AddBook
 from nextbook.models import Book
+from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import CreateView
 
@@ -17,6 +18,9 @@ def library(request):
             addedbook.save()
             form = AddBook()
             success = True
+
+        
+
     return render(request, 'newbook/index.html', {'form': form})
 
 #all new below
