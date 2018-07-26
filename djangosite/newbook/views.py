@@ -9,6 +9,9 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import CreateView
 
 
+def get_success_message(self, cleaned_data):
+    return "{} by {} has been added".format(cleaned_data['title', 'author'])
+
 def library(request):
     form = AddBook(request.POST or None)
     success = False
@@ -18,8 +21,10 @@ def library(request):
             addedbook.save()
             form = AddBook()
             success = True
+            #messages.success(request, "%(title)s by %(author)s was added to your library")
 
-        
+            new_title = get_success_message(self, request)
+
 
     return render(request, 'newbook/index.html', {'form': form})
 
