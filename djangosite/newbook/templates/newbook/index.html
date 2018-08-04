@@ -14,11 +14,22 @@
   <body>
   {% block content %}
       <h3><a>New book</a></h3>
-      <form method="POST" class="post-form">{% csrf_token %}
+      <form onsubmit="return results();" method="POST" class="post-form">{% csrf_token %}
           {{ form.as_p }}
           <button type="submit" class="save btn btn-default">Add book</button>
       </form>
   {% endblock %}
+  <br>
+  <br>
+
+  {% if messages %}
+  <ul class="messages">
+      {% for message in messages %}
+      <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+  </ul>
+  {% endif %}
+
   <br>
   <h3><a href="/">Back to home</a></h3>
 
