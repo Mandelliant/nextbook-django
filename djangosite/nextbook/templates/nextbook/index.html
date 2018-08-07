@@ -7,11 +7,11 @@
 
     <title>Nextbook</title>
     <link href="//fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/newbook.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
 
   </head>
 
-    <h3><a>Next you should read:</a></h3>
+    <h3>Next you should read:</h3>
      <p> {{ books.title }} by {{ books.author }}</p>
 
     <input type="button" value="Get another suggestion" onClick="window.location.reload()">
