@@ -10,7 +10,7 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 <h2>Current version</h2>
 
-**1.0.0**
+**1.1.0**
 
 * Nextbook web app works
 * Book model
@@ -18,6 +18,7 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 * Individual pages for each feature
 * Add new book and random recommendation features functioning
 * Form clears after submission of new book
+* Added new book confirmation message now live
 
 
 <h2>Previous versions</h2>
@@ -36,7 +37,6 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 **Upcoming**
 
-* Confirmation message: "Added [title] by [author]"
 * Replace HTML forms with Django forms
 
 
