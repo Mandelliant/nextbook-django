@@ -37,7 +37,8 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 **Upcoming**
 
-* Replace HTML forms with Django forms
+* Update HTML/CSS
+* General design improvements
 
 
 **Projects**
