@@ -1,4 +1,5 @@
 import os
+import random, string
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -8,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'rbyn^-8i*r)qg%i%&kn&(^x$74wsb=b@)gjj%%*uu0_431dki2'
+SECRET_KEY = os.env.get('SECRET_KEY', ''.join(random.choice(string.lowercase) for i in range(20)))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
