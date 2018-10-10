@@ -4,21 +4,25 @@
   <head>
 
     <title>Nextbook: Newbook</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="//fonts.googleapis.com/css?family=Rubik" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{% static 'css/newbook.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
 
   </head>
 
   <body>
   {% block content %}
-      <h3><a>New book</a></h3>
+
+    <div class="header">
+      <h3>New book</h3>
+    </div>
+
       <form onsubmit="return results();" method="POST" class="post-form">{% csrf_token %}
           {{ form.as_p }}
           <button type="submit" class="save btn btn-default">Add book</button>
       </form>
+
   {% endblock %}
+
   <br>
   <br>
 
@@ -31,7 +35,10 @@
   {% endif %}
 
   <br>
-  <h3><a href="/">Back to home</a></h3>
+
+  <div class="home-button">
+    <button type="button"><a href="/" style="text-decoration:none">Back to home</a></button>
+  </div>
 
   </body>
 
