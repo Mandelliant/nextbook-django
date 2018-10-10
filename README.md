@@ -58,3 +58,9 @@ Nextbook will let you take a csv file of your personal library and suggest the n
 
 
 [repo]: https://github.com/Mandelliant/nextbook
+
+**INSTALLATION**
+* Add SECRET_KEY to environment variables
+* E.g. Mac: Export SECRET_KEY=rbyn^-8i*r)qg%i%&kn&(^xwsb=b@)gjj%%*uu0_431dki2
+
+
