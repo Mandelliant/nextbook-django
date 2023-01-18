@@ -1,4 +1,4 @@
-# nextbook-django
+# nextbook-django [DEPRICATED]
 Nextbook built with Django
 
 Django version of [Nextbook][repo] for web use and ease of access.
